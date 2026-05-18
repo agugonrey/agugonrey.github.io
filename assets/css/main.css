@@ -1,0 +1,40 @@
+:root {
+  --fg: #1a1a1a;
+  --muted: #666;
+  --accent: #2c5282;
+  --bg: #fdfdfc;
+  --max: 38rem;
+}
+
+* { box-sizing: border-box; }
+html { font-size: 18px; }
+body {
+  font-family: Charter, "Iowan Old Style", Georgia, "Apple Garamond", "Times New Roman", serif;
+  color: var(--fg);
+  background: var(--bg);
+  line-height: 1.55;
+  max-width: var(--max);
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+h1, h2, h3, h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  line-height: 1.25;
+}
+a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+header, footer { font-size: 0.9rem; color: var(--muted); }
+header { margin-bottom: 2rem; }
+footer { margin-top: 4rem; border-top: 1px solid #eee; padding-top: 1rem; }
+code, pre { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace; font-size: 0.92em; }
+pre { background: #f5f5f4; padding: 0.8rem 1rem; overflow-x: auto; border-radius: 4px; }
+.badge { font-size: 0.75rem; color: var(--muted); }
+.lane { font-size: 0.75rem; padding: 0.1rem 0.4rem; border-radius: 3px; background: #eef; color: #335; }
+.lane-drug-discovery { background: #fde6d3; color: #7c3a00; }
+.lane-methods { background: #d4edda; color: #155724; }
+.lane-agentic { background: #dbe7ff; color: #1a3478; }
+.meta { color: var(--muted); margin-top: -0.5rem; }
+@media (prefers-color-scheme: dark) {
+  :root { --fg: #e8e8e8; --bg: #1a1a1a; --muted: #999; --accent: #7ab2ff; }
+  pre { background: #2a2a2a; }
+}

@@ -1,0 +1,18 @@
+title: Agustin Gonzalez-Reymundez
+description: AI Scientist — drug-target nomination, multi-omic ML, agentic tooling for science
+baseurl: ""
+url: "https://agugonrey.github.io"
+
+permalink: /blog/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

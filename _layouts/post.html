@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<article>
+  <h1>{{ page.title }}</h1>
+  <p class="meta">{{ page.date | date: "%Y-%m-%d" }} · <span class="lane lane-{{ page.lane }}">{{ page.lane }}</span></p>
+  {{ content }}
+</article>
