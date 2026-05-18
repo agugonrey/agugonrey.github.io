@@ -1,6 +1,6 @@
 ## TL;DR
 
-Over two weekends, I built a personal job-application pipeline that generates tailored resumes and cover letters from a pasted job description in about ten minutes — without allowing the LLM to invent claims. Every resume bullet traces back to an atomic experience unit stored in YAML. The same compose-from-IDs pattern, combined with confidentiality guards, generalizes well to scientific writing workflows where accuracy and information control matter.
+I built a personal job-application pipeline that generates tailored resumes and cover letters from a pasted job description in about ten minutes, without allowing the LLM to invent claims. Every resume bullet traces back to an atomic experience unit stored in YAML. The same compose-from-IDs pattern, combined with confidentiality guards, generalizes well to scientific writing workflows where accuracy and information control matter.
 
 The system runs on Claude Code with a lightweight Python backend: roughly 2,000 lines of Python, four slash commands, and a single experience store. It cuts application prep from about an hour to a few minutes of review and curation.
 
