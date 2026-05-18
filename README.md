@@ -39,6 +39,5 @@ blog/index.md     Generated; combines _posts/ with external posts from the store
 
 ## Contact
 
+- LinkedIn: [agustin-gon-rey](https://www.linkedin.com/in/agustin-gon-rey/) — best for first contact
 - GitHub: [@agugonrey](https://github.com/agugonrey)
-- LinkedIn: [agugonrey](https://www.linkedin.com/in/agugonrey)
-- Email: agugonrey@gmail.com

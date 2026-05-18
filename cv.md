@@ -8,7 +8,7 @@ permalink: /cv/
 
 AI Scientist working on drug-target nomination, multi-omic ML, and agentic tooling for scientific workflows.
 
-[Resume DOCX](/assets/resume/AgustinGonzalezReymundez.docx) · [LinkedIn](https://www.linkedin.com/in/agugonrey) · [Google Scholar](https://scholar.google.com/citations?user=iM7Q6MsAAAAJ&hl=en)
+[Resume PDF](https://drive.google.com/file/d/1Qi2xQKB1oWx9ioSYROefNE5iaBegXW4F/view) · [LinkedIn](https://www.linkedin.com/in/agustin-gon-rey/) · [Google Scholar](https://scholar.google.com/citations?user=iM7Q6MsAAAAJ&hl=en)
 
 ## Experience
 
