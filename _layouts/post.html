@@ -2,7 +2,32 @@
 layout: default
 ---
 <article>
+  <a class="post-back" href="{{ '/blog/' | relative_url }}">← Back to blog</a>
+
+  {%- if page.banner -%}
+  <figure class="post-banner">
+    <img src="{{ page.banner | relative_url }}" alt="{{ page.banner_alt }}">
+    {%- if page.banner_caption -%}
+      <figcaption>{{ page.banner_caption }}</figcaption>
+    {%- endif -%}
+  </figure>
+  {%- endif -%}
+
   <h1>{{ page.title }}</h1>
-  <p class="meta">{{ page.date | date: "%Y-%m-%d" }} · <span class="lane lane-{{ page.lane }}">{{ page.lane }}</span></p>
+  <p class="post-meta">{% include post-meta.html post=page %}</p>
+
   {{ content }}
+
+  <nav class="post-nav">
+    <span class="prev">
+      {%- if page.previous -%}
+        ← <a href="{{ page.previous.url | relative_url }}">{{ page.previous.title }}</a>
+      {%- endif -%}
+    </span>
+    <span class="next">
+      {%- if page.next -%}
+        <a href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a> →
+      {%- endif -%}
+    </span>
+  </nav>
 </article>

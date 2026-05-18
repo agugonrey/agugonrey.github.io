@@ -1,0 +1,19 @@
+{%- assign p = include.post -%}
+{%- assign thumb_src = p.thumb | default: p.banner -%}
+<article class="post-card">
+  {%- if thumb_src -%}
+    <div class="post-card-thumb">
+      <img src="{{ thumb_src | relative_url }}" alt="">
+    </div>
+  {%- else -%}
+    <div class="post-card-thumb-fallback lane-{{ p.lane }}"></div>
+  {%- endif -%}
+  <div class="post-card-body">
+    <h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
+    <p class="post-card-meta">
+      {{ p.date | date: "%Y-%m-%d" }}
+      · <span class="lane lane-{{ p.lane }}">{{ p.lane }}</span>
+    </p>
+    {%- if p.description -%}<p class="post-card-desc">{{ p.description }}</p>{%- endif -%}
+  </div>
+</article>

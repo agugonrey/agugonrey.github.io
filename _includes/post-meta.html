@@ -1,0 +1,11 @@
+{%- assign p = include.post -%}
+{%- assign words = p.content | number_of_words -%}
+{%- assign auto_min = words | divided_by: 200 | plus: 1 -%}
+{%- if p.reading_time -%}
+  {%- assign minutes = p.reading_time -%}
+{%- else -%}
+  {%- assign minutes = auto_min -%}
+{%- endif -%}
+{{ p.date | date: "%Y-%m-%d" }}
+· <span class="lane lane-{{ p.lane }}">{{ p.lane }}</span>
+· {{ minutes }} min read

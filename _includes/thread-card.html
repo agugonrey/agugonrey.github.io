@@ -1,0 +1,20 @@
+{%- assign t = include.thread -%}
+<article class="thread-card">
+  {%- if t.thumb -%}
+    {%- if t.thumb_alt == nil or t.thumb_alt == "" -%}
+      <p style="background:#c2410c;color:#fff;padding:0.6rem;border-radius:4px;">
+        ERROR: <code>thumb_alt</code> is required for thread <code>{{ t.id }}</code> when <code>thumb</code> is set.
+      </p>
+    {%- else -%}
+      <div class="thread-card-thumb">
+        <img src="{{ t.thumb | relative_url }}" alt="{{ t.thumb_alt }}">
+      </div>
+    {%- endif -%}
+  {%- endif -%}
+  <p class="thread-card-label">{{ t.id | replace: "-", " " }}</p>
+  <h3>{{ t.title }}</h3>
+  <div class="thread-card-body">{{ t.body | markdownify }}</div>
+  {%- if t.cta_href -%}
+    <p class="thread-card-cta"><a href="{{ t.cta_href | relative_url }}">{{ t.cta_text }} →</a></p>
+  {%- endif -%}
+</article>

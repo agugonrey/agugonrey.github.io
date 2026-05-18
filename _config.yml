@@ -3,6 +3,12 @@ description: AI Scientist — drug-target nomination, multi-omic ML, agentic too
 baseurl: ""
 url: "https://agugonrey.github.io"
 
+# OPTIONAL site-wide banner image (shown at top of every page).
+# To add: drop a 1600x400 file into portfolio_site/assets/images/banner/,
+# then uncomment the two lines below.
+# banner_image: /assets/images/banner/site-banner.jpg
+# banner_image_alt: ""
+
 permalink: /blog/:slug/
 
 defaults:

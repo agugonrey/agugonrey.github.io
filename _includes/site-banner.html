@@ -1,0 +1,5 @@
+{%- if site.banner_image -%}
+<div class="site-banner" role="presentation">
+  <img src="{{ site.banner_image | relative_url }}" alt="{{ site.banner_image_alt | default: '' }}">
+</div>
+{%- endif -%}

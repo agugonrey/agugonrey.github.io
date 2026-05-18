@@ -1,0 +1,26 @@
+{%- assign has_image = page.hero_image | default: false -%}
+<section class="hero">
+  {%- if has_image -%}
+    {%- if page.hero_image_alt == nil or page.hero_image_alt == "" -%}
+      <p style="background:#c2410c;color:#fff;padding:0.6rem;border-radius:4px;">
+        ERROR: <code>hero_image_alt</code> is required in <code>index.md</code> front-matter when <code>hero_image</code> is set.
+      </p>
+    {%- else -%}
+      <div class="hero-image">
+        <img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_image_alt }}">
+      </div>
+    {%- endif -%}
+  {%- endif -%}
+  <div class="hero-body">
+    <h1>{{ site.title }}</h1>
+    <p class="hero-tagline">{{ page.hero_tagline }}</p>
+    <nav class="hero-links">
+      <a href="{{ '/papers/' | relative_url }}">Papers</a>
+      <a href="{{ '/packages/' | relative_url }}">Packages</a>
+      <a href="{{ '/blog/' | relative_url }}">Blog</a>
+      <a href="{{ '/cv/' | relative_url }}">CV</a>
+      <a href="{{ '/now/' | relative_url }}">Now</a>
+      <a href="https://scholar.google.com/citations?user=iM7Q6MsAAAAJ&amp;hl=en">Scholar</a>
+    </nav>
+  </div>
+</section>

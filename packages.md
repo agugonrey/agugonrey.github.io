@@ -7,6 +7,7 @@ permalink: /packages/
 # Packages & Repositories
 
 
+
 ## <a id="pkg_moss"></a>MOSS
 
 Sparse multi-omic decomposition; on CRAN. Recognized among the top 40 R packages of 2020.
@@ -18,6 +19,8 @@ Sparse multi-omic decomposition; on CRAN. Recognized among the top 40 R packages
 
 
 
+
+
 ## <a id="pkg_ecv"></a>eCV
 
 Enhanced Coefficient of Variation and IDR extensions for reproducibility assessment of multi-replicate omic experiments. On CRAN. Methods paper on bioRxiv: https://www.biorxiv.org/content/10.1101/2023.12.18.572208v3
@@ -25,6 +28,8 @@ Enhanced Coefficient of Variation and IDR extensions for reproducibility assessm
 - **Language:** R
 - **Source:** [https://github.com/eclipsebio/eCV](https://github.com/eclipsebio/eCV)
 - **Install / docs:** [https://CRAN.R-project.org/package=eCV](https://CRAN.R-project.org/package=eCV)
+
+
 
 
 
