@@ -82,7 +82,7 @@ hr.rule { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0 1rem; }
 /* --- hero --- */
 .hero { display: flex; gap: 1.5rem; align-items: flex-start; margin: 1rem 0 2rem; }
 .hero-image { flex: 0 0 120px; }
-.hero-image img { width: 120px; height: 120px; object-fit: cover; border-radius: 8px; }
+.hero-image img { width: 120px; height: auto; border-radius: 8px; }
 .hero-body { flex: 1 1 auto; }
 .hero h1 { margin-bottom: 0.2rem; }
 .hero-tagline { color: var(--muted); font-size: 1.05rem; margin: 0 0 1rem; }
@@ -110,8 +110,7 @@ hr.rule { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0 1rem; }
 .thread-card-thumb img {
   width: 100%;
   max-width: 560px;
-  aspect-ratio: 2 / 1;
-  object-fit: cover;
+  height: auto;
   border-radius: 6px;
 }
 .thread-card-label {
