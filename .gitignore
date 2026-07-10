@@ -4,3 +4,10 @@ _site/
 Gemfile.lock
 .bundle/
 vendor/
+
+# Local Codex/project harness. May contain private workflow notes.
+AGENTS.md
+
+# Local drafts and generated previews.
+_drafts/
+outputs/

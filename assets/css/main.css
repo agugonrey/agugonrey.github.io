@@ -151,6 +151,12 @@ hr.rule { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0 1rem; }
   border-radius: 8px;
 }
 .post-banner figcaption { text-align: center; }
+.post-subtitle {
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin: -0.1rem 0 0.8rem;
+}
 .post-meta { font-size: 0.9rem; color: var(--muted); margin: -0.4rem 0 1.5rem; }
 .post-meta .lane { margin: 0 0.4rem; }
 .post-nav {
